@@ -1,0 +1,15 @@
+header .typeAce {
+    background-color: #0e1d30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 4.8rem;
+    letter-spacing: 0.1em;
+  
+    color: #12cec3;
+  }
+  

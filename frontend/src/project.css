@@ -1,0 +1,157 @@
+:root {
+  --text-color: rgb(160 160 160 / 35%);
+  --text-color-active: #878d92;
+  --body-color: #eaeaea;
+  --bg-color: #0b1727;
+  --bg-color-secondary: #1d2736;
+  --card-bg: #121b28;
+  }
+
+  body {
+    color: var(--body-color);
+    background-color: var(--bg-color);
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    border-color: rgb(120 120 120 / 18%);
+  }
+  
+  .main {
+    padding-top: 10rem;
+  }
+  
+  .typing-area {
+    height: 85px;
+    background-color: var(--bg-color-secondary);
+    font-size: 2rem;
+    padding-left: 1rem;
+    line-height: 85px;
+    letter-spacing: 1px;
+    color: #a8a8a8;
+    overflow: hidden;
+    font-family: Roboto Mono, monospace;
+    font-style: italic;
+    position: relative;
+    transition: box-shadow 0.1s linear;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(120 120 120 / 18%);
+  }
+  
+  .typing-area:focus {
+    outline: none;
+  }
+  
+  .typing-area.active:focus {
+    -webkit-box-shadow: 0px 1px 3px 1px rgba(80, 199, 1, 0.9), 0 0 0px 2px rgba(80, 199, 1, 0.9);
+    box-shadow: 0px 1px 2px 1px rgba(80, 199, 1, 0.9), 0 0 0px 2px rgba(80, 199, 1, 0.9);
+  }
+  
+  .typing-area.active.is-error:focus {
+    -webkit-box-shadow: 0px 1px 3px 1px rgba(199, 31, 1, 0.9), 0 0 0px 2px rgba(199, 31, 1, 0.9);
+    box-shadow: 0px 1px 2px 1px rgba(199, 31, 1, 0.9), 0 0 0px 2px rgba(199, 31, 1, 0.9);
+  }
+  
+  .remaining-text {
+    color: var(--text-color);
+    display: inline-block;
+    white-space: pre;
+  }
+  
+  .typing-area.active .remaining-text {
+    color: var(--text-color-active);
+  }
+  
+  .typing-area.active .cursor {
+    position: relative;
+    top: 63px;
+    left: 0;
+  }
+  
+  .typing-area.active .cursor::before {
+    content: " ";
+    position: absolute;
+    font-style: normal;
+    height: 3px;
+    border-left: 10px solid #bbb;
+    animation: flash 0.5s infinite;
+    -webkit-animation: flash 0.5s infinite;
+  }
+  
+  @-webkit-keyframes flash {
+    0% {
+      border-left-color: transparent;
+    }
+  
+    50% {
+      border-left-color: #bbb;
+    }
+  
+    100% {
+      border-left-color: transparent;
+    }
+  }
+  
+  @keyframes flash {
+    0% {
+      border-left-color: transparent;
+    }
+  
+    50% {
+      border-left-color: #bbb;
+    }
+  
+    100% {
+      border-left-color: transparent;
+    }
+  }
+  
+  hr {
+    border-color: rgb(118 118 118 / 64%);
+  }
+  
+  .speed-meter .meter-gauge > span {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px;
+    margin: 0 2px;
+  }
+  
+  .speed-meter .meter-gauge .slow {
+    background-color: #f15a25;
+    color: #111;
+  }
+  .speed-meter .meter-gauge .average {
+    background-color: #fbb03b;
+    color: #111;
+  }
+  .speed-meter .meter-gauge .fast {
+    background-color: #d9e021;
+    color: #111;
+  }
+  .speed-meter .meter-gauge .professional {
+    background-color: #3ab54b;
+    color: #111;
+  }
+  .speed-meter .meter-gauge .top {
+    background-color: #006837;
+  }
+  
+  .speed-meter .meter-gauge .border {
+    border: 3px solid rgb(255, 255, 148) !important;
+  }
+  
+  .bg-white .speed-meter .meter-gauge .border {
+    border: 3px solid rgb(49, 49, 49) !important;
+  }
+  
+  .bg-dark .result-into {
+    color: rgb(248, 249, 250);
+  }
+  
+  .h5,
+  h5 {
+    font-size: 0.75rem;
+  }
+  

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.mainBody {
+  height: 100vh;
+  background-color: #0b1727;
+  display: flex;
+  flex-direction: column;
+}
+header .typeAce {
+  background-color: #0e1d30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+
+
+  font-family: "Roboto";
+  text-decoration: none;
+  font-size: 4.8rem;
+  letter-spacing: 0.1em;
+
+  color: #12cec3;
+}
+.hero {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  color: white;
+  font-family: "Roboto";
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.7rem;
+  position: relative;
+  top: 10rem;
+}
+.buttons {
+  position: relative;
+  bottom: 10rem;
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+}
+
+button {
+  cursor: pointer;
+  height: 3rem;
+  width: 100%;
+}
+.signupBtn {
+  background-color: #12ce74;
+}
+
+.signupBtn:hover {
+  background-color: #0eb665;
+}
+.signupBtn:active {
+  transform: translateY(0.1rem);
+}
+
+.loginBtn {
+  background-color: #12cec3;
+}
+.loginBtn:hover {
+  background-color: #0eb4a9;
+}
+.loginBtn:active {
+  transform: translateY(0.1rem);
+}
